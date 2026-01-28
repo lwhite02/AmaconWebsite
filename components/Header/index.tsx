@@ -103,9 +103,9 @@ const Header = () => {
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
-                            className={`flex py-2 text-base ${
+                            className={`flex py-2 text-base font-semibold ${
                               menuItem.hovered ? "text-hover-color" : "text-"
-                            } text-[black] hover:text-[#0484cc]  lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
+                            } text-[white] hover:text-[#0484cc]  lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
                             onMouseEnter={() => {
                               menuItem.hovered = true;
                             }}
