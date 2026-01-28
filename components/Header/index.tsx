@@ -40,7 +40,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`header items-right top-0 right-0 z-30 flex w-full bg-[#272652] text-[white] text-semibold ${
+        className={`header items-right top-0 right-0 z-30 flex w-full bg-[#272652] text-[#ffffff] text-semibold ${
           /* White background */ sticky
             ? "!fixed !z-[9999] shadow-sticky backdrop-blur-sm !transition "
             : "absolute"
@@ -59,13 +59,13 @@ const Header = () => {
               >
                 <Image
                   src={Image1}
-                  alt="log2222"
+                  alt="amaconLogo"
                   width={140}
                   height={30}
                   className="hidden w-full "
                 />
                 <img
-                  src="/images/logo/updatedlogo.png" // Replace with fallback image path
+                  src="/images/logo/amaconLogo.png" // Replace with fallback image path
                   alt="Background Image Fallback"
                 />
               </Link>
