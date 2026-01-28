@@ -1,25 +1,20 @@
-
-import Link from 'next/link';
-import Image from 'next/image'; // Import Image component from next/image
-
 import React from 'react';
+import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <section
-      className="relative w-full min-h-screen flex items-center justify-center bg-cover bg-center p-5 pt-5"
-      style={{
-        backgroundImage: "url('/images/hero/amaconHeader.jpg')",
-      }}
-    >
-      {/* Optional: Add your hero content here */}
-      {/* <div className="z-10 text-center">
-        <h1 className="text-5xl font-bold text-white">Your Vision<br/>Our Expertise<br/>Unparalleled Results</h1>
-      </div> */}
+    <section className="w-full flex items-center justify-center p-5 pt-20 bg-[#272652]">
+      <Image
+        src="/images/hero/amaconHeader.jpg"
+        alt="Hero"
+        width={1200} 
+        height={600} 
+        className="rounded-lg w-full h-auto"
+        style={{ objectFit: 'contain' }}
+        priority
+      />
     </section>
   );
 };
 
 export default Hero;
-
-
