@@ -1,11 +1,7 @@
-const repoName = 'AmaconWebsite';
-
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  trailingSlash: true,
-  distDir: './out',
-  output: 'export',
-  assetPrefix: `/${repoName}/`,
-  basePath: `/${repoName}`,
+  trailingSlash: false, // optional, only if you want /about instead of /about/
+  reactStrictMode: true, // good practice
 };
 
 module.exports = nextConfig;
