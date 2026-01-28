@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <section className="w-full flex items-center justify-center p-5 pt-20 bg-[#272652]">
+    <section className="w-full flex items-center justify-center  pt-20 bg-[#272652]">
       <Image
         src="/images/hero/amaconHeader.jpg"
         alt="Hero"

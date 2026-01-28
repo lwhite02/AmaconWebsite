@@ -25,63 +25,92 @@ const AboutSectionOne = () => {
   return (
     <section id="about" className="pt-10 md:pt-5 lg:pt-5 ">
       <div className="container">
-        <div className="border-b border-body-color/[.15] pb-16  md:pb-20 lg:pb-28">
-          <div className="-mx-4 flex flex-wrap items-center">
-            <div className="w-full px-4 lg:w-1/2">
-              <h3 className="pb-2 pt-10 text-lg font-bold text-[#0484cc]">
-                <span className="border-b-2 border-[#0484cc]">About Us</span>
-              </h3>
-              <p className="text-5xl font-bold">
-                Engineering Solutions: Our Journey and Expertise
+        <div className=" pb-12  md:pb-12 lg:pb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3">
+            {/* Left blank column */}
+            <div></div>
+            {/* Center column with content */}
+            <div className="mb-10 flex flex-col items-center px-2 md:px-0">
+              <img
+                src="/images/about/Amacon_Website_Consulting_Services.jpg"
+                alt="Background Image Fallback"
+                className="mx-auto"
+              />
+              <p className="mt-5  text-center font-semibold text-[#212c53]">
+                Amacon is a re-branding of iControl Consulting (Pty) Ltd with an
+                intentional business focus and structuring of our engineering
+                services with greater definition. As a company on the move we
+                have grown our services to also provide quality solutions and
+                products that will benefit and add value to our existing and
+                potential Clients.
               </p>
-
-              <div
-                className="wow fadeInUp mb-12 mt-5 max-w-[570px] lg:mb-0"
-                data-wow-delay=".15s"
-              >
-                <p className="mb-7 text-base text-[#9E9E9E]">
-                  iControl Consulting (Pty) Ltd is a dynamic small to
-                  medium-sized consulting firm that specializes in providing
-                  comprehensive Engineering, Procurement, and Construction
-                  Management (EPCM) and commissioning services in the
-                  electrical, instrumentation, and control fields. Our team is
-                  dedicated to delivering high-quality solutions and often
-                  collaborates with mining companies, as well as other
-                  consulting or engineering firms, to complement their
-                  electrical and instrumentation expertise. By partnering with
-                  us, these companies can leverage our specialized knowledge and
-                  experience to successfully complete their projects.
-                </p>
-
-                {/* Button */}
-                <div className="flex justify-start">
-                  {" "}
-                  {/* Adjusted flex to justify-between */}
-                  <div></div> {/* Empty div for spacing */}
-                  <div>
-                    <a
-                      href="/about"
-                      className="mt-10 inline-block rounded-md bg-[#0484cc] py-3 px-2 text-sm font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80"
-                    >
-                      Learn More
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <p className="mt-5 text-center">
+                We are a small to medium sized company that employs 15 personnel
+                with 8 qualified engineers, several experienced technicians and
+                site engineers, a competent design and drawing office team, and
+                a marketing and sales team. All with back-up support.
+              </p>
+              <p className="mt-5 text-center">
+                Amacon’s strength is in the quality of the personnel that we
+                employ. Our personnel have a wealth of local and international
+                experience, and have successfully completed numerous projects
+                and have work experience in 13 countries in Africa, and further
+                afield in China, Turkey, Guatemala, Mexico and Saudi Arabia.
+              </p>
+              <p className="mt-5 text-center">
+                Amacon personnel have supported Canadian, American, Turkish,
+                Japanese and United Kingdom consulting firms and mining
+                companies with design, engineering, construction and
+                commissioning management services.
+              </p>
             </div>
-            <div className="mt-10 flex w-full flex-col justify-between px-4 lg:w-1/2">
-              <div>
-                <div className="mb-4 shadow-lg">
-                  <img
-                    src="/images/about/aboutusimage.webp" // Replace with fallback image path
-                    alt="Background Image Fallback"
-                  />
-                </div>
-              </div>
-            </div>
+            {/* Right blank column */}
+            <div></div>
           </div>
+          <img
+            src="/images/about/Amacon_Website_map.jpg"
+            alt="Background Image Fallback"
+            className="mx-auto"
+            style={{ maxWidth: "550px", width: "100%", height: "auto" }}
+          />
+
+          <p className=" mt-5 flex flex-col items-center text-center font-semibold text-[#212c53]">
+            Amacon’s strength is in the quality of the personnel that we employ.
+          </p>
         </div>
       </div>
+      <div className="mx-auto max-w-[1050px] w-full">
+  {/* Large top image */}
+  <div>
+    <img
+      src="/images/about/Amacon_Website_home_image_1.jpg"
+      alt="Background Image Fallback"
+      className="mx-auto w-full h-auto"
+    />
+  </div>
+  {/* Grid of images below */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch mt-8">
+    {/* Left: One tall image */}
+    <div className="flex">
+      <img
+        src="/images/about/Amacon_Website_home_image_4.jpg"
+        alt="Background Image Fallback"
+        className="object-cover w-full h-full rounded-lg"
+        style={{ minHeight: "400px", maxHeight: "700px" }}
+      />
+    </div>
+    {/* Right: Two stacked images */}
+    <div className="flex flex-col gap-6">
+      <img
+        src="/images/about/Amacon_Website_home_image_3.jpg"
+        alt="Background Image Fallback"
+        className="object-cover w-full rounded-lg flex-1"
+        style={{ minHeight: 0, height: "50%" }}
+      />
+      {/* Add another image here if needed */}
+    </div>
+  </div>
+</div>
     </section>
   );
 };

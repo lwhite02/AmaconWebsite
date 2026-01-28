@@ -29,9 +29,9 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
             </p>
             <div className="absolute bottom-4 right-4 pt-2">
               <Link href={link}>
-                <a className="text-[black] text-bold text-sm hover:text-[#017dc5]">
+             
                   Learn More <FaArrowRight className="inline ml-1 hover:text-[#017dc5]" />
-                </a>
+           
               </Link>
             </div>
           </div>
