@@ -7,7 +7,7 @@ import React from 'react';
 const Hero = () => {
   return (
     <section
-      className="relative w-full min-h-screen flex items-center justify-center bg-cover bg-center"
+      className="relative w-full min-h-screen flex items-center justify-center bg-cover bg-center p-5 pt-5"
       style={{
         backgroundImage: "url('/images/hero/amaconHeader.jpg')",
       }}

@@ -54,7 +54,7 @@ const Header = () => {
               <Link
                 href=""
                 className={`header-logo block w-full ${
-                  sticky ? "py-3 lg:py-2" : "py-8"
+                  sticky ? "py-2 lg:py-1" : "py-4"
                 }`}
               >
                 <Image
@@ -94,18 +94,18 @@ const Header = () => {
                       : "invisible top-[100%] opacity-0"
                   }`}
                 >
-                  <ul className="block px-3 lg:flex lg:space-x-12 lg:px-0">
+                  <ul className="block px-2 lg:flex lg:space-x-8 lg:px-0">
                     {menuData.map((menuItem, index) => (
                       <li
                         key={menuItem.id}
-                        className="group relative mx-3 lg:mx-0"
+                        className="group relative mx-2 lg:mx-0"
                       >
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
-                            className={`flex py-2 text-base font-semibold ${
+                            className={`flex py-1 text-base font-semibold ${
                               menuItem.hovered ? "text-hover-color" : "text-"
-                            } text-[white] hover:text-[#0484cc]  lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
+                            } text-[white] hover:text-[#0484cc]  lg:mr-0 lg:inline-flex lg:py-3 lg:px-0`}
                             onMouseEnter={() => {
                               menuItem.hovered = true;
                             }}
