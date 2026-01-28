@@ -7,12 +7,7 @@ const menuData: Menu[] = [
     path: "/",
     newTab: false,
   },
-  {
-    id: 2,
-    title: "About",
-    path: "/about",
-    newTab: false,
-  },
+
   {
     id: 3,
     title: "Our Services",
@@ -59,6 +54,13 @@ const menuData: Menu[] = [
       
     ],
   },
+     {
+    id: 14,
+    title: "Our products",
+    path: "/",
+    newTab: false,
+  },
+ 
   {
     id: 10,
     title: "Our Experience",
@@ -78,6 +80,12 @@ const menuData: Menu[] = [
       },
      
     ],
+  },
+   {
+    id: 2,
+    title: "Product Showroom",
+    path: "/about",
+    newTab: false,
   },
   {
     id: 13,

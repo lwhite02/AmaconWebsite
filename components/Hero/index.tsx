@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <>
        <section className="relative z-10 overflow-hidden py-20 md:py-28">
-        <div className="container relative z-10 mx-auto flex items-center justify-center pb-20 text-center md:text-left">
+        {/* <div className="container relative z-10 mx-auto flex items-center justify-center pb-20 text-center md:text-left">
           <div className="max-w-xl text-center md:text-left">
             <h3 className="mt-20 py-20 pb-2 text-lg font-bold text-[#0484cc]">
               <span className="mt-20 border-b-2 border-[#0484cc]">
@@ -24,14 +24,14 @@ const Hero = () => {
                  </p>
                
           </div>
-        </div>
+        </div> */}
         
         
         <div className="md:w-2/2 absolute inset-0 z-0 pt-20 pb-2">
           {/* Background Image */}
           <div className="relative h-full w-full pt-20">
             <img
-              src="/images/hero/herobg5.webp
+              src="/images/hero/amaconHeader.jpg
               " // Replace with your image path
               alt="Background Image Fallback"
               style={{

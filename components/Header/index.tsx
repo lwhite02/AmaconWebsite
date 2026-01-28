@@ -5,7 +5,7 @@ import { IconMenu2, IconX } from "@tabler/icons-react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
 
-const Image1 = "/images/logo/iControl Logo_Final.png";
+const Image1 = "/images/logo/amaconLogo.png";
 
 const Header = () => {
   // Navbar toggle
@@ -40,7 +40,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`header items-right top-0 right-0 z-30 flex w-full bg-[#272652] text-[black] ${
+        className={`header items-right top-0 right-0 z-30 flex w-full bg-[#272652] text-[white] text-semibold ${
           /* White background */ sticky
             ? "!fixed !z-[9999] shadow-sticky backdrop-blur-sm !transition "
             : "absolute"
