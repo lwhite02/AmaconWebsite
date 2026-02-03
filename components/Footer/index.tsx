@@ -115,8 +115,8 @@ const Footer = () => {
           </div>
         </div>
         {/* Footer Bottom */}
-        <div className="mt-8 text-center text-sm text-[#CED3F6]">
-          © 2025 iControl Consulting (Pty) Ltd. All rights reserved.
+        <div className="mt-8 text-center text-sm text-[#CED3F6] justify-start text-start">
+          © 2026 Amacon (Pty) Ltd. All rights reserved.
         </div>
       </div>
     </footer>

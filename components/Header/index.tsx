@@ -103,7 +103,7 @@ const Header = () => {
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
-                            className={`flex py-2 text-base font-semibold ${
+                            className={`flex py-2 text-lg font-semibold ${
                               menuItem.hovered ? "text-hover-color" : "text-"
                             } text-[white] hover:text-[#0484cc]  lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
                             onMouseEnter={() => {
@@ -120,7 +120,7 @@ const Header = () => {
                           <>
                             <a
                               onClick={() => handleSubmenu(index)}
-                              className="group-hover:[#0484cc] flex cursor-pointer items-center justify-between py-2 text-base text-[white] hover:text-[#0484cc] font-semibold lg:mr-0 lg:inline-flex lg:py-6 lg:px-0"
+                              className="group-hover:[#0484cc] flex cursor-pointer items-center justify-between py-2 text-lg text-[white] hover:text-[#0484cc] font-semibold lg:mr-0 lg:inline-flex lg:py-6 lg:px-0"
                             >
                               {menuItem.title}
                               <span className="pl-3">
@@ -141,9 +141,11 @@ const Header = () => {
                                 <Link
                                   href={submenuItem.path}
                                   key={submenuItem.id}
-                                  className="block rounded py-2.5 text-sm text-[black] hover:text-[#0484cc]  lg:px-3"
+                                  className="block rounded py-2.5 text-md text-[#938686] hover:text-[#080808]  lg:px-3"
                                 >
+                                  
                                   {submenuItem.title}
+                                  <hr className="mt-2 text-grey-300" style={{color: "#c2afaf"}}></hr>
                                 </Link>
                               ))}
                             </div>

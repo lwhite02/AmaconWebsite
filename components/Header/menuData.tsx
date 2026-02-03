@@ -15,42 +15,31 @@ const menuData: Menu[] = [
     submenu: [
       {
         id: 4,
-        title: "Power and Energy",
+        title: "Electrical Engineering",
         path: "/services/powerAndEnergy",
         newTab: false,
       },
       {
         id:5,
-        title: "Infrastructure",
+        title: "Instrument Engineering",
         path: "/services/infrastructure",
         newTab: false,
       },
       {
         id: 6,
-        title: "Engineering, Design and Drawing Office",
+        title: "Process Control and Engineering",
         path: "/services/drawing",
         newTab: false,
        
       },
       {
         id: 7,
-        title: "Factory Acceptance Testing & Quality Assurance",
+        title: "Construction Management",
         path: "/services/qualityandfactory",
         newTab: false,
       },
       
-      {
-        id: 8,
-        title: "Construction Management and Commissioning",
-        path: "/services/construction",
-        newTab: false,
-      },
-      {
-        id: 9,
-        title: "Asset Manament Service Division" ,
-        path: "/services/assetmanagement",
-        newTab: false,
-      },
+     
       
     ],
   },

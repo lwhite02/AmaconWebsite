@@ -79,38 +79,84 @@ const AboutSectionOne = () => {
           </p>
         </div>
       </div>
-      <div className="mx-auto max-w-[1050px] w-full">
-  {/* Large top image */}
-  <div>
-    <img
-      src="/images/about/Amacon_Website_home_image_1.jpg"
-      alt="Background Image Fallback"
-      className="mx-auto w-full h-auto"
-    />
-  </div>
-  {/* Grid of images below */}
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch mt-8">
-    {/* Left: One tall image */}
-    <div className="flex">
-      <img
-        src="/images/about/Amacon_Website_home_image_4.jpg"
-        alt="Background Image Fallback"
-        className="object-cover w-full h-full rounded-lg"
-        style={{ minHeight: "400px", maxHeight: "700px" }}
-      />
-    </div>
-    {/* Right: Two stacked images */}
-    <div className="flex flex-col gap-6">
-      <img
-        src="/images/about/Amacon_Website_home_image_3.jpg"
-        alt="Background Image Fallback"
-        className="object-cover w-full rounded-lg flex-1"
-        style={{ minHeight: 0, height: "50%" }}
-      />
-      {/* Add another image here if needed */}
-    </div>
-  </div>
-</div>
+      <div className="mx-auto w-full max-w-[1050px]">
+        {/* Large top image */}
+        <div>
+          <img
+            src="/images/about/Amacon_Website_home_image_1.jpg"
+            alt="Background Image Fallback"
+            className="mx-auto h-auto w-full"
+          />
+        </div>
+        {/* Grid of images below */}
+        <div className="mt-8 grid grid-cols-1 items-stretch gap-6 md:grid-cols-2">
+          {/* Left: One tall image */}
+          <div className="flex">
+            <img
+              src="/images/about/Amacon_Website_home_image_4.jpg"
+              alt="Background Image Fallback"
+              className="h-full w-full rounded-lg object-cover"
+              style={{ minHeight: "400px", maxHeight: "700px" }}
+            />
+          </div>
+          {/* Right: Two stacked images */}
+          <div className="flex flex-col gap-6">
+            <img
+              src="/images/about/Amacon_Website_home_image_3.jpg"
+              alt="Background Image Fallback"
+              className="w-full flex-1 rounded-lg object-cover"
+              style={{ minHeight: 0, height: "50%" }}
+            />
+            {/* Add another image here if needed */}
+          </div>
+        </div>
+        <img
+          src="/images/about/Amacon_Website_home_image_2.jpg"
+          alt="Background Image Fallback"
+          className="w-full flex-1 rounded-lg object-cover pt-5"
+          style={{ minHeight: 0, height: "50%" }}
+        />
+      </div>
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-3">
+        {/* Left blank column */}
+        <div></div>
+        {/* Center column with content */}
+        <div className="mb-10 flex flex-col items-center px-2 md:px-0">
+          <img
+            src="/images/about/Amacon_Website_send_message.jpg"
+            alt="Background Image Fallback"
+            className="mx-auto"
+          />
+          <input
+            type="text"
+            placeholder="Your Name (required)"
+            className="border-gray-300 mt-5 w-full max-w-xs rounded border p-2"
+          />
+          <input
+            type="text"
+            placeholder="Your Email Address (required)"
+            className="border-gray-300 mt-5 w-full max-w-xs rounded border p-2"
+          />
+          <input
+            type="text"
+            placeholder="Your Contact Number (required)"
+            className="border-gray-300 mt-5 w-full max-w-xs rounded border p-2"
+          />
+          <input
+            type="text"
+            placeholder="Please send us a short message"
+            className="border-gray-300 mt-5 w-full max-w-xs rounded border p-2"
+          />
+          <button
+            style={{ backgroundColor: "#2563eb" }}
+            className="mt-5 rounded px-6 py-2 text-white"
+          >
+            Submit
+          </button>
+        </div>
+        {/* Right blank column */}
+        <div></div>
+      </div>
     </section>
   );
 };
